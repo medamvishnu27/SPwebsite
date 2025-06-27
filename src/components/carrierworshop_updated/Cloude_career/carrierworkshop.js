@@ -175,7 +175,7 @@ const CareerWorkshop = () => {
             {/* Testimonials Section */}
             <section className={styles.testimonialsSection}>
                 <div className="container">
-                    <h2 className={styles.sectionTitle}>Testimonials</h2>
+                    <h2 className={styles.sectionTitle}>Success Stories</h2>
                     <div className={styles.testimonialWrapper}>
                         <div className={styles.testimonialTrack}>
                             {[...testimonials, ...testimonials].map((testimonial, index) => (
