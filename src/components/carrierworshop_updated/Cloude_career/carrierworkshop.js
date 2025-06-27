@@ -21,10 +21,11 @@ import testimonial11 from "../../../assets/digital_marketing_profiles/70.png";
 import testimonial12 from "../../../assets/digital_marketing_profiles/71.png";
 import testimonial13 from "../../../assets/digital_marketing_profiles/72.png";
 import testimonial14 from "../../../assets/digital_marketing_profiles/73.png";
-import Button from "../../Career_workshop/ButtonDemoBooking/Button"
-import Button2 from "./BookDemo"
-import Footer from "../../footer/footer"
+import Button from "../../Career_workshop/ButtonDemoBooking/Button";
+import Button2 from "./BookDemo";
+import Footer from "../../footer/footer";
 import { Bold } from 'lucide-react';
+
 const CareerWorkshop = () => {
     const { selectedDate } = useDateContext();
     const [registrationModal, setRegistrationModal] = useState(false);
@@ -86,13 +87,8 @@ const CareerWorkshop = () => {
                                     <h1 className={styles.heroOverlayTitle}>
                                         Launch a High-Growth Career in Cloud Computing — Even Without Prior Experience!
                                     </h1>
-                                    {/* <p className={styles.heroOverlaySubtitle}>
-                                        In this  <span>FREE 90-Minute Career Workshop</span> — with <span>minimal coding, maximum impact</span>, and strong earning potential
-
-                                    </p> */}
                                     <p className={styles.heroOverlaySubtitle}>
-                                        In this FREE 90-Minute Career Workshop <span className={styles.mentorName}>  Suneel Kumar Kola </span>, a hands-on Cloud Engineer with deep expertise in <span className={styles.mentorName} > AWS, Azure, and DevOps.</span>
-
+                                        In this FREE 90-Minute Career Workshop <span className={styles.mentorName}> Suneel Kumar Kola </span>, a hands-on Cloud Engineer with deep expertise in <span className={styles.mentorName}> AWS, Azure, and DevOps.</span>
                                         – an industry expert with 8+ years of experience!
                                     </p>
                                     <p className={styles.heroOverlayNote}>
@@ -117,16 +113,7 @@ const CareerWorkshop = () => {
                         <div className="col-12 col-lg-6 order-lg-1 order-2">
                             <div className={styles.webinarInfo}>
                                 <p className={styles.webinarText}>Free 90-Minute Webinar is scheduled on</p>
-                                {/* <p className={styles.date}>{selectedDate || '29th June 2025 @ 10 AM'}</p> */}
-                                {/* <button
-                  className={`btn ${styles.registerBtn}`}
-                  onClick={() => setRegistrationModal(true)}
-                >
-                  REGISTER NOW
-                </button> */}
                                 <Button />
-
-
                                 <p className={styles.limitedSeats}>Limited Seats Available!</p>
                             </div>
                         </div>
@@ -150,7 +137,7 @@ const CareerWorkshop = () => {
                     <div className="row">
                         {[
                             " A student or fresher confused about which tech career to pursue in 2025?",
-                            "  A working professional planning to switch to a more dynamic, future-ready field?",
+                            " A working professional planning to switch to a more dynamic, future-ready field?",
                             "Curious about AWS, Azure, or DevOps but unsure where to begin or how to grow?",
                             " From a non-coding or non-tech background, wondering if Cloud is still possible for you?",
                             " Already learning DevOps or Linux, and want a career roadmap in the cloud space?"
@@ -178,7 +165,6 @@ const CareerWorkshop = () => {
                             " How to land jobs in cloud + DevOps roles through smart learning and portfolio building",
                             " How Suneel Kumar Kola’s mentorship can help you break into cloud careers with confidence",
                             "Real success stories of students who entered cloud roles from various non-tech backgrounds"
-
                         ].map((item, index) => (
                             <div key={index} className={styles.discoverItem}>{item}</div>
                         ))}
@@ -211,33 +197,28 @@ const CareerWorkshop = () => {
                 <div className="container">
                     <h2 className={styles.sectionTitleWithUnderline}>Meet Your Host</h2>
                     <div className="row align-items-center">
-                        <div className="col-12 col-lg-4 order-lg-1 order-2">
+                        <div className="col-12 col-lg-4 order-lg-1 order-1">
                             <div className={styles.hostImageContainer}>
                                 <img
                                     src={ceoimg}
-                                    alt="Mahesh Babu Channa"
+                                    alt="Suneel Kumar Kola"
                                     className={styles.hostImage}
                                 />
                             </div>
                         </div>
-                        <div className="col-12 col-lg-8 order-lg-2 order-1">
+                        <div className="col-12 col-lg-8 order-lg-2 order-2">
                             <div className={styles.hostInfo}>
-                                <h3 className={styles.mentor} > Suneel Kumar Kola</h3>
-                                <p className={styles.mentordescription1} >Cloud Engineer | DevOps Advocate | Mentor</p>
+                                <h3 className={styles.mentor}>Suneel Kumar Kola</h3>
+                                <p className={styles.mentordescription1}>Cloud Engineer | DevOps Advocate | Mentor</p>
                                 <p>
                                     Hi, I’m Suneel Kumar Kola, a dedicated and results-driven Cloud Engineer. I specialize in transforming traditional IT infrastructure into scalable, secure, and efficient cloud-native solutions using AWS and Azure.
-
                                     With real-world experience implementing DevOps practices and automating infrastructure for various projects, I help bridge the gap between development and operations to drive faster delivery and smoother deployments.
-
-
                                 </p>
                                 <p>
                                     I’m deeply passionate about mentoring and empowering beginners in tech — whether you're coming from a coding, non-coding, or even non-tech background. My mission is to simplify the cloud journey for you, show you what works, and help you build a career you’re proud of.
-
                                 </p>
                                 <p>
                                     Join me in this exclusive workshop — and let’s explore how to shape your future in the cloud.
-
                                 </p>
                                 <div className={styles.hostStats}>
                                     <div className={styles.statItem}>
@@ -264,17 +245,9 @@ const CareerWorkshop = () => {
                 <div className="container">
                     <h2 className={styles.sectionTitleWithUnderline}>Bonus: Free Career Consultation for Attendees!</h2>
                     <p className={styles.bonusText}>
-                        All webinar attendees will get a free 1-3 Hour Career Consultation Call with Mahesh Babu Channa to chart their
-                        career path in the insurance industry. Session Limit: 100 people.
+                        All webinar attendees will get a free 1-3 Hour Career Consultation Call with Suneel Kumar Kola to chart their career path in the cloud industry. Session Limit: 100 people.
                     </p>
-                    {/* <button
-            className={`btn ${styles.registerBtn}`}
-            onClick={() => setRegistrationModal(true)}
-          >
-            REGISTER NOW
-          </button> */}
                     <Button2 />
-
                 </div>
             </section>
 
@@ -293,10 +266,8 @@ const CareerWorkshop = () => {
                                     />
                                 </div>
                             ))}
-                        </div> */}
-
-                        {/* Previous Button */}
-                        {/* <button
+                        </div>
+                        <button
                             className="carousel-control-prev"
                             type="button"
                             data-bs-target="#awardsCarousel"
@@ -308,10 +279,8 @@ const CareerWorkshop = () => {
                                 style={{ filter: 'invert(1)' }}
                             ></span>
                             <span className="visually-hidden">Previous</span>
-                        </button> */}
-
-                        {/* Next Button */}
-                        {/* <button
+                        </button>
+                        <button
                             className="carousel-control-next"
                             type="button"
                             data-bs-target="#awardsCarousel"
@@ -328,7 +297,6 @@ const CareerWorkshop = () => {
                 </div>
             </section> */}
 
-
             {/* FAQ Section */}
             <section className={styles.faqSection}>
                 <div className="container">
@@ -339,7 +307,7 @@ const CareerWorkshop = () => {
                                 id: 'faq1',
                                 question: 'Who can attend this masterclass?',
                                 answer:
-                                    'Anyone! Whether you are a student  fresher, working professional, or someone from a non-tech background — this workshop is for you if you’re curious about cloud careers.'
+                                    'Anyone! Whether you are a student, fresher, working professional, or someone from a non-tech background — this workshop is for you if you’re curious about cloud careers.'
                             },
                             {
                                 id: 'faq2',
@@ -369,9 +337,9 @@ const CareerWorkshop = () => {
                                 id: 'faq6',
                                 question: 'What are the bonuses included?',
                                 answer: [
-                                    '-  Cloud Career Roadmap PDF',
+                                    '- Cloud Career Roadmap PDF',
                                     '- DevOps Toolkit Checklist',
-                                    '-  50+ ChatGPT Prompts for Cloud Jobs',
+                                    '- 50+ ChatGPT Prompts for Cloud Jobs',
                                     '- Beginner-to-Expert Certification Guide'
                                 ]
                             },
@@ -397,16 +365,14 @@ const CareerWorkshop = () => {
                             return (
                                 <div className={styles.faqItem} key={id}>
                                     <button
-                                        className={`${styles.faqQuestion} ${isOpen ? styles.faqQuestionActive : ''
-                                            }`}
+                                        className={`${styles.faqQuestion} ${isOpen ? styles.faqQuestionActive : ''}`}
                                         type="button"
                                         onClick={() => setOpenFaq(isOpen ? null : id)}
                                         aria-expanded={isOpen}
                                     >
                                         {question}
                                         <span
-                                            className={`${styles.faqIcon} ${isOpen ? styles.faqIconRotated : ''
-                                                }`}
+                                            className={`${styles.faqIcon} ${isOpen ? styles.faqIconRotated : ''}`}
                                         >
                                             ▼
                                         </span>
@@ -431,80 +397,8 @@ const CareerWorkshop = () => {
                 </div>
             </section>
 
-
-            {/* Registration Modal */}
-            {/* {registrationModal && (
-        <div className={`modal fade show ${styles.registrationModal}`} style={{ display: 'block' }} tabIndex="-1">
-          <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h3 className="modal-title">REGISTER NOW</h3>
-                <button
-                  type="button"
-                  className="btn-close"
-                  onClick={() => setRegistrationModal(false)}
-                ></button>
-              </div>
-              <div className="modal-body">
-                <form onSubmit={handleSubmit}>
-                  <div className="mb-3">
-                    <select
-                      className="form-select"
-                      name="course"
-                      value={formData.course}
-                      onChange={handleInputChange}
-                      required
-                    >
-                      <option value="">Select Course</option>
-                      <option value="Full Stack Career">Full Stack Career</option>
-                    </select>
-                  </div>
-                  <div className="mb-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Your Name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <input
-                      type="email"
-                      className="form-control"
-                      placeholder="Your Email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <input
-                      type="tel"
-                      className="form-control"
-                      placeholder="Enter Phone Number"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      required
-                    />
-                  </div>
-                  <button type="submit" className={`btn ${styles.bookNowBtn} w-100`}>
-                    BOOK NOW
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-      {registrationModal && <div className="modal-backdrop fade show"></div>} */}
             <Footer />
         </div>
-
     );
 };
 

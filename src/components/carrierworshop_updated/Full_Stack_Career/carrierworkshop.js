@@ -190,7 +190,7 @@ const CareerWorkshop = () => {
 
       {/* Testimonials Section */}
       <section className={styles.testimonialsSection}>
-        <div className="container">
+        <div className="container-fluid">
           <h2 className={styles.sectionTitle}>Testimonials</h2>
           <div className={styles.testimonialWrapper}>
             <div className={styles.testimonialTrack}>
@@ -209,12 +209,12 @@ const CareerWorkshop = () => {
       </section>
 
       {/* Meet Your Host Section */}
-      {/* Meet Your Host Section */}
       <section className={styles.hostSection}>
         <div className="container">
           <h2 className={styles.sectionTitleWithUnderline}>Meet Your Host</h2>
           <div className="row align-items-center">
-            <div className="col-12 col-lg-4 order-lg-1 order-2">
+            
+            <div className="col-12 col-lg-4 order-lg-1 order-1">
               <div className={styles.hostImageContainer}>
                 <img
                   src={ceoimg}
@@ -223,7 +223,7 @@ const CareerWorkshop = () => {
                 />
               </div>
             </div>
-            <div className="col-12 col-lg-8 order-lg-2 order-1">
+            <div className="col-12 col-lg-8 order-lg-2 order-2">
               <div className={styles.hostInfo}>
                 <h3 className={styles.mentor}> Mahesh Babu Channa</h3>
                 <p className={styles.mentordescription1}>Career Mentor | IIM Alumnus | Founder – Vajra.ai, Finversity, SocialPracha</p>

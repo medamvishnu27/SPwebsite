@@ -190,7 +190,7 @@
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  /* box-shadow: 0 10px 20px rgba(0,0,0,0.2); */
 }
 
 /* Target Audience Section */
@@ -257,6 +257,7 @@
   overflow: hidden;
   position: relative;
   width: 100%;
+  /* height: 200px; */
 }
 
 .testimonialTrack {
@@ -267,7 +268,7 @@
 
 .testimonialItem {
   min-width: clamp(80px, 20vw, 120px);
-  height: clamp(100px, 20vw, 250px);
+  height: clamp(100px, 20vw, 350px);
   margin: 0 clamp(10px, 2vw, 15px);
   border: 2px solid #27ae60;
   border-radius: 10px;
@@ -400,7 +401,7 @@
   border-radius: 8px;
   overflow: hidden;
   background: white;
-  box-shadow: 0 2px 4px rgba foreseeable(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .faqQuestion {
@@ -559,12 +560,30 @@
   }
 
   .awardImage {
-    max-height: clamp(200px, 45vw, 300px);
+    max-height: clamp(300px, 60vw, 400px);
   }
 
   .hostStats {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  /* Meet Your Host Section - small screen image on top, text below */
+  .hostSection .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .hostSection .col-12.col-lg-4 {
+    order: 1;
+  }
+  .hostSection .col-12.col-lg-8 {
+    order: 2;
+  }
+
+  .testimonialItem {
+    min-width: clamp(150px, 30vw, 200px);
+    height: clamp(200px, 40vw, 450px);
+    margin: 0 clamp(8px, 2vw, 12px);
   }
 }
 
@@ -594,7 +613,7 @@
   }
 
   .webinarImage {
-    max-width: 80%;
+    max-width: 90%;
   }
 
   .numberArrow {
@@ -612,16 +631,26 @@
   }
 
   .testimonialItem {
-    min-width: clamp(60px, 15vw, 100px);
-    height: clamp(150px, 20vw, 150px);
-    margin: 0 clamp(5px, 1.5vw, 10px);
+    min-width: clamp(150px, 30vw, 200px);
+    height: clamp(200px, 40vw, 450px);
+    margin: 0 clamp(8px, 2vw, 12px);
   }
 
   .hostInfo h3 {
     font-size: clamp(1.3rem, 3.5vw, 1.8rem);
   }
 
-  
+  /* Meet Your Host Section - small screen image on top, text below */
+  .hostSection .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .hostSection .col-12.col-lg-4 {
+    order: 1;
+  }
+  .hostSection .col-12.col-lg-8 {
+    order: 2;
+  }
 
   .statItem strong {
     font-size: clamp(1.3rem, 3.5vw, 1.8rem);
@@ -714,9 +743,9 @@
   }
 
   .testimonialItem {
-    min-width: clamp(50px, 12vw, 80px);
-    height: clamp(100px, 20vw, 250px);
-    margin: 0 clamp(5px, 1vw, 8px);
+    min-width: clamp(120px, 25vw, 160px);
+    height: clamp(180px, 35vw, 350px);
+    margin: 0 clamp(7px, 1.5vw, 10px);
   }
 
   .hostImage {
@@ -745,7 +774,7 @@
   }
 
   .awardImage {
-    max-height: clamp(120px, 40vw, 200px);
+    max-height: clamp(200px, 50vw, 300px);
   }
 
   .faqQuestion {
@@ -787,7 +816,18 @@
     transform: translateX(110px);
     /* width: ; */
   }
-  
+
+  /* Meet Your Host Section - small screen image on top, text below */
+  .hostSection .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .hostSection .col-12.col-lg-4 {
+    order: 1;
+  }
+  .hostSection .col-12.col-lg-8 {
+    order: 2;
+  }
 }
 @media screen and (max-width:992px){
   .webinarImage{
@@ -802,4 +842,3 @@
   }
   
 }
-

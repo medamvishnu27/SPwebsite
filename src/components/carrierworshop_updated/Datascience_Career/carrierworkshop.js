@@ -23,10 +23,11 @@ import testimonial11 from "../../../assets/digital_marketing_profiles/70.png";
 import testimonial12 from "../../../assets/digital_marketing_profiles/71.png";
 import testimonial13 from "../../../assets/digital_marketing_profiles/72.png";
 import testimonial14 from "../../../assets/digital_marketing_profiles/73.png";
-import Button from "../../Career_workshop/ButtonDemoBooking/Button"
-import Button2 from "./BookDemo"
-import Footer from "../../footer/footer"
+import Button from "../../Career_workshop/ButtonDemoBooking/Button";
+import Button2 from "./BookDemo";
+import Footer from "../../footer/footer";
 import { Bold } from 'lucide-react';
+
 const CareerWorkshop = () => {
     const { selectedDate } = useDateContext();
     const [registrationModal, setRegistrationModal] = useState(false);
@@ -92,15 +93,12 @@ const CareerWorkshop = () => {
                                     </h1>
                                     <p className={styles.heroOverlaySubtitle}>
                                         Discover how you can launch a rewarding career in  <span>Data Science & AI</span> — with <span>minimal coding, maximum impact</span>, and strong earning potential.
-
                                     </p>
                                     <p className={styles.heroOverlaySubtitle}>
                                         Join our exclusive session led by  <span className={styles.mentorName}> Mahesh Babu Channa </span>, an IIM alumnus and industry expert with 12+ years of experience in tech, training, and career transformation.
-
-                                        – an industry expert with 8+ years of experience!
                                     </p>
                                     <p className={styles.heroOverlayNote}>
-                                        Discover how you can build a rewarding Data Science & AI  career — starting from zero, with clear steps, job-ready skills, and proven mentorship.
+                                        Discover how you can build a rewarding Data Science & AI career — starting from zero, with clear steps, job-ready skills, and proven mentorship.
                                     </p>
                                 </div>
                             </div>
@@ -121,16 +119,7 @@ const CareerWorkshop = () => {
                         <div className="col-12 col-lg-6 order-lg-1 order-2">
                             <div className={styles.webinarInfo}>
                                 <p className={styles.webinarText}>Free 90-Minute Webinar is scheduled on</p>
-                                {/* <p className={styles.date}>{selectedDate || '29th June 2025 @ 10 AM'}</p> */}
-                                {/* <button
-                  className={`btn ${styles.registerBtn}`}
-                  onClick={() => setRegistrationModal(true)}
-                >
-                  REGISTER NOW
-                </button> */}
                                 <Button />
-
-
                                 <p className={styles.limitedSeats}>Limited Seats Available!</p>
                             </div>
                         </div>
@@ -180,7 +169,6 @@ const CareerWorkshop = () => {
                             "Proven strategies to crack interviews and land job offers confidently",
                             " How Mahesh Babu Channa’s mentorship can transform your career journey",
                             " Real-life success stories of students who started from scratch and got placed!",
-
                         ].map((item, index) => (
                             <div key={index} className={styles.discoverItem}>{item}</div>
                         ))}
@@ -212,8 +200,8 @@ const CareerWorkshop = () => {
             <section className={styles.hostSection}>
                 <div className="container">
                     <h2 className={styles.sectionTitleWithUnderline}>Meet Your Host</h2>
-                    <div className="row align-items-center">
-                        <div className="col-12 col-lg-4 order-lg-1 order-2">
+                    <div className="row align-items-center flex-column flex-lg-row">
+                        <div className="col-12 col-lg-4 order-lg-1 order-1">
                             <div className={styles.hostImageContainer}>
                                 <img
                                     src={ceoimg}
@@ -222,10 +210,10 @@ const CareerWorkshop = () => {
                                 />
                             </div>
                         </div>
-                        <div className="col-12 col-lg-8 order-lg-2 order-1">
+                        <div className="col-12 col-lg-8 order-lg-2 order-2">
                             <div className={styles.hostInfo}>
-                                <h3 className={styles.mentor} > Mahesh Babu Channa</h3>
-                                <p className={styles.mentordescription1} >Career Mentor | IIM Alumnus | Founder – Vajra.ai, Finversity, SocialPracha</p>
+                                <h3 className={styles.mentor}> Mahesh Babu Channa</h3>
+                                <p className={styles.mentordescription1}>Career Mentor | IIM Alumnus | Founder – Vajra.ai, Finversity, SocialPracha</p>
                                 <p>
                                     Hi, I’m Mahesh Babu Channa, an IIM alumnus and Founder of Vajra,ai, Finversity, SocialPrachar, one of India’s top EdTech platforms. With 12+ years of experience and over 8,000 students trained, I’ve helped freshers, job seekers, and working professionals build rewarding careers in Data Science, AI, Full Stack Development, Digital Marketing, and more.
                                     These free career orientation masterclasses are designed to give you clarity and direction in a fast-changing job market. Whether you’re confused after graduation, restarting after a break, or stuck in the wrong role — I’ll show you the exact steps to start a high-growth career with or without a tech background.
@@ -234,7 +222,6 @@ const CareerWorkshop = () => {
                                     From guiding students who had no clue to helping them land dream jobs — I’ve seen transformations happen. Now it's your turn.
                                     Join the session and let’s figure out your best-fit career path together.
                                     Your career deserves the right start
-
                                 </p>
                                 <p>
                                     — Mahesh Babu Channa <br></br>
@@ -268,14 +255,7 @@ const CareerWorkshop = () => {
                         All webinar attendees will get a free 1-3 Hour Career Consultation Call with Mahesh Babu Channa to chart their
                         career path in the insurance industry. Session Limit: 100 people.
                     </p>
-                    {/* <button
-            className={`btn ${styles.registerBtn}`}
-            onClick={() => setRegistrationModal(true)}
-          >
-            REGISTER NOW
-          </button> */}
                     <Button2 />
-
                 </div>
             </section>
 
@@ -295,8 +275,6 @@ const CareerWorkshop = () => {
                                 </div>
                             ))}
                         </div>
-
-                        {/* Previous Button */}
                         <button
                             className="carousel-control-prev"
                             type="button"
@@ -310,8 +288,6 @@ const CareerWorkshop = () => {
                             ></span>
                             <span className="visually-hidden">Previous</span>
                         </button>
-
-                        {/* Next Button */}
                         <button
                             className="carousel-control-next"
                             type="button"
@@ -328,7 +304,6 @@ const CareerWorkshop = () => {
                     </div>
                 </div>
             </section>
-
 
             {/* FAQ Section */}
             <section className={styles.faqSection}>
@@ -398,16 +373,14 @@ const CareerWorkshop = () => {
                             return (
                                 <div className={styles.faqItem} key={id}>
                                     <button
-                                        className={`${styles.faqQuestion} ${isOpen ? styles.faqQuestionActive : ''
-                                            }`}
+                                        className={`${styles.faqQuestion} ${isOpen ? styles.faqQuestionActive : ''}`}
                                         type="button"
                                         onClick={() => setOpenFaq(isOpen ? null : id)}
                                         aria-expanded={isOpen}
                                     >
                                         {question}
                                         <span
-                                            className={`${styles.faqIcon} ${isOpen ? styles.faqIconRotated : ''
-                                                }`}
+                                            className={`${styles.faqIcon} ${isOpen ? styles.faqIconRotated : ''}`}
                                         >
                                             ▼
                                         </span>
@@ -432,80 +405,8 @@ const CareerWorkshop = () => {
                 </div>
             </section>
 
-
-            {/* Registration Modal */}
-            {/* {registrationModal && (
-        <div className={`modal fade show ${styles.registrationModal}`} style={{ display: 'block' }} tabIndex="-1">
-          <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h3 className="modal-title">REGISTER NOW</h3>
-                <button
-                  type="button"
-                  className="btn-close"
-                  onClick={() => setRegistrationModal(false)}
-                ></button>
-              </div>
-              <div className="modal-body">
-                <form onSubmit={handleSubmit}>
-                  <div className="mb-3">
-                    <select
-                      className="form-select"
-                      name="course"
-                      value={formData.course}
-                      onChange={handleInputChange}
-                      required
-                    >
-                      <option value="">Select Course</option>
-                      <option value="Full Stack Career">Full Stack Career</option>
-                    </select>
-                  </div>
-                  <div className="mb-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Your Name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <input
-                      type="email"
-                      className="form-control"
-                      placeholder="Your Email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <input
-                      type="tel"
-                      className="form-control"
-                      placeholder="Enter Phone Number"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      required
-                    />
-                  </div>
-                  <button type="submit" className={`btn ${styles.bookNowBtn} w-100`}>
-                    BOOK NOW
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-      {registrationModal && <div className="modal-backdrop fade show"></div>} */}
             <Footer />
         </div>
-
     );
 };
 
