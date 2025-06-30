@@ -6,6 +6,7 @@ import styles from './codeclash.module.css';
 import firstPrizeImage from '../../assets/CodeClash2.0/CodeClash1stprize.jpg';
 import secondPrizeImage from '../../assets/CodeClash2.0/CodeClash2ndprize.jpg';
 import thirdPrizeImage from '../../assets/CodeClash2.0/CodeClash3rdprize.jpg';
+import Footer from '../../components/footer/footer'
 
 const CodeClash = () => {
   useEffect(() => {
@@ -144,10 +145,10 @@ const CodeClash = () => {
       icon: "🥇",
       bgColor: styles.winnerGold,
       borderColor: styles.borderGold,
-      description: "Outstanding problem-solving skills and innovative approach to coding challenges. Demonstrated exceptional mastery of JavaScript and ReactJS."
+      description: "Outstanding problem-solving skills and innovative approach to coding challenges. Demonstrated exceptional mastery of JavaScript."
     },
     {
-      position: "2nd Prize", 
+      position: "2nd Prize",
       name: "Sai Vijay Babu",
       image: secondPrizeImage,
       icon: "🥈",
@@ -365,6 +366,85 @@ const CodeClash = () => {
           </div>
         </div>
 
+        {/* Winners Section */}
+        <div className={styles.winnersSection}>
+          <div className={styles.winnersSectionHeader}>
+            <span className={styles.winnersIcon}>🏆</span>
+            <h2 className={styles.winnersSectionTitle}>CodeClash 2.0 Winners</h2>
+            <p className={styles.winnersSectionDescription}>
+              Meet the brilliant minds who conquered our 7-day coding challenge! These exceptional developers demonstrated outstanding problem-solving skills, innovative thinking, and mastery of JavaScript . Their dedication and technical excellence earned them not just prizes, but recognition as the top coders of CodeClash 2.0.
+            </p>
+          </div>
+
+          <div className={styles.winnersSectionContent}>
+            <div className="row mb-6 gy-3">
+              {winners.map((winner, index) => (
+                <div key={index} className="col-lg-4 col-md-6">
+                  <motion.div
+                    className={`${styles.winnerCard} ${winner.bgColor} ${winner.borderColor}`}
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.2 }}
+                  >
+                    <div className={styles.winnerCardContent}>
+                      <div className={styles.winnerImageContainer}>
+                        <img
+                          src={winner.image}
+                          alt={`${winner.position} Winner - ${winner.name}`}
+                          className={styles.winnerImage}
+                        />
+                        <div className={styles.winnerPositionBadge}>
+                          <span className={styles.winnerPositionIcon}>{winner.icon}</span>
+                          <span className={styles.winnerPositionText}>{winner.position}</span>
+                        </div>
+                      </div>
+                      <div className={styles.winnerInfo}>
+                        <h3 className={styles.winnerName}>{winner.name}</h3>
+                        {/* <p className={styles.winnerPosition}>{winner.position}</p> */}
+                        <p className={styles.winnerDescription}>{winner.description}</p>
+                      </div>
+                    </div>
+                  </motion.div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+
+
+        {/* Goodbye Message */}
+        <div className={styles.goodbyeSection}>
+          <motion.div
+            className={styles.goodbyeCard}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+          >
+            <div className={styles.goodbyeContent}>
+              <div className={styles.goodbyeIcon}>👋</div>
+              <h2 className={styles.goodbyeTitle}>Bye bye CodeClash 2.0</h2>
+              <p className={styles.goodbyeMessage}>
+                We will meet again at <span className={styles.codeclash3}>CodeClash 3.0</span> soon!
+              </p>
+
+              Thank you to every passionate coder who made CodeClash 2.0 an unforgettable journey!<br />
+              Your creativity, determination, and teamwork inspired us all.<br />
+              Whether you reached the podium or simply challenged yourself, you're a true champion in our community.<br /><br />
+              🚀 Stay tuned for CodeClash 3.0 — where even bigger challenges, prizes, and opportunities await.<br />
+              Keep learning, keep building, and get ready to shine brighter than ever.<br />
+              <span className={styles.codeclash3}>The next coding legend could be you!</span>
+
+              <div className={styles.goodbyeEmojis}>
+                <span>🚀</span>
+                <span>💻</span>
+                <span>🏆</span>
+                <span>✨</span>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
         <div className={styles.infoSection}>
           <div className={styles.infoHeader}>
             <h2 className={styles.infoTitle}>Code Clash 2.0 by Social Prachar</h2>
@@ -439,18 +519,18 @@ const CodeClash = () => {
         {/* extra registration button */}
 
 
-        <div className="text-center mb-8">
+        {/* <div className="text-center mb-8">
           <motion.button
             onClick={() => setIsFormOpen(true)}
             className={styles.secondaryButton}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            {/* <span>👤</span> */}
+            <span>👤</span>
             Register for codeclash
-            {/* <span>✨</span> */}
+            <span>✨</span>
           </motion.button>
-        </div>
+        </div> */}
 
 
 
@@ -547,50 +627,6 @@ const CodeClash = () => {
           </div>
         </div>
 
-        {/* Winners Section */}
-        <div className={styles.winnersSection}>
-          <div className={styles.winnersSectionHeader}>
-            <span className={styles.winnersIcon}>🏆</span>
-            <h2 className={styles.winnersSectionTitle}>CodeClash 2.0 Winners</h2>
-            <p className={styles.winnersSectionDescription}>
-              Meet the brilliant minds who conquered our 7-day coding challenge! These exceptional developers demonstrated outstanding problem-solving skills, innovative thinking, and mastery of JavaScript . Their dedication and technical excellence earned them not just prizes, but recognition as the top coders of CodeClash 2.0.
-            </p>
-          </div>
-          
-          <div className={styles.winnersSectionContent}>
-            <div className="row mb-6 gy-3">
-              {winners.map((winner, index) => (
-                <div key={index} className="col-lg-4 col-md-6">
-                  <motion.div
-                    className={`${styles.winnerCard} ${winner.bgColor} ${winner.borderColor}`}
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.2 }}
-                  >
-                    <div className={styles.winnerCardContent}>
-                      <div className={styles.winnerImageContainer}>
-                        <img 
-                          src={winner.image} 
-                          alt={`${winner.position} Winner - ${winner.name}`}
-                          className={styles.winnerImage}
-                        />
-                        <div className={styles.winnerPositionBadge}>
-                          <span className={styles.winnerPositionIcon}>{winner.icon}</span>
-                          <span className={styles.winnerPositionText}>{winner.position}</span>
-                        </div>
-                      </div>
-                      <div className={styles.winnerInfo}>
-                        <h3 className={styles.winnerName}>{winner.name}</h3>
-                        {/* <p className={styles.winnerPosition}>{winner.position}</p> */}
-                        <p className={styles.winnerDescription}>{winner.description}</p>
-                      </div>
-                    </div>
-                  </motion.div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
 
         {/* prize pool section */}
 
@@ -657,37 +693,7 @@ const CodeClash = () => {
         </div>
         */}
 
-        {/* Goodbye Message */}
-        <div className={styles.goodbyeSection}>
-          <motion.div
-            className={styles.goodbyeCard}
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-          >
-            <div className={styles.goodbyeContent}>
-              <div className={styles.goodbyeIcon}>👋</div>
-              <h2 className={styles.goodbyeTitle}>Bye bye CodeClash 2.0</h2>
-              <p className={styles.goodbyeMessage}>
-                We will meet again at <span className={styles.codeclash3}>CodeClash 3.0</span> soon!
-              </p>
-             
-                Thank you to every passionate coder who made CodeClash 2.0 an unforgettable journey!<br/>
-                Your creativity, determination, and teamwork inspired us all.<br/>
-                Whether you reached the podium or simply challenged yourself, you're a true champion in our community.<br/><br/>
-                🚀 Stay tuned for CodeClash 3.0 — where even bigger challenges, prizes, and opportunities await.<br/>
-                Keep learning, keep building, and get ready to shine brighter than ever.<br/>
-                <span className={styles.codeclash3}>The next coding legend could be you!</span>
-              
-              <div className={styles.goodbyeEmojis}>
-                <span>🚀</span>
-                <span>💻</span>
-                <span>🏆</span>
-                <span>✨</span>
-              </div>
-            </div>
-          </motion.div>
-        </div>
+
 
         <div className={styles.faqSection}>
           <div className={styles.faqHeader}>
@@ -728,6 +734,7 @@ const CodeClash = () => {
             ))}
           </div>
         </div>
+
 
         {/*
         <div className="text-center mb-8">

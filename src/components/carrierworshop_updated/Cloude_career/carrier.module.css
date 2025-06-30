@@ -822,7 +822,7 @@
 }
 @media screen and (max-width:992px) {
   .hostImage{
-    transform: translateX(180px);
+    transform: translateX(110px);
     /* width: ; */
   }
 
@@ -847,7 +847,7 @@
 }
 @media screen and (max-width: 992px) {
   .mentor{
-    transform: translateX(190px);
+    transform: translateX(60px);
   }
   
 }

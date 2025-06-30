@@ -13,6 +13,7 @@ import { faPhone, faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Marquee from 'react-fast-marquee';
 import { faGraduationCap, faUsers, faHandshake, faMedal } from "@fortawesome/free-solid-svg-icons";
+// import path from "path";
 
 const NavBar = () => {
   const location = useLocation();
@@ -22,7 +23,14 @@ const NavBar = () => {
   const dropDownValues = [
     { label: "Data Science + AI", path: "/data-science" },
     { label: "Full Stack Program", path: "/full-stack-developer-course" },
-    { label: "Digital Marketing", path: "/digital-marketing-course-training-institute-hyderabad" }
+    { label: "Digital Marketing", path: "/digital-marketing-course-training-institute-hyderabad" },
+    {label:" Python Full Stack",path:"/python-full-stack-development-course"},
+    {label:"Java Full Stack",path:"/java-full-stack-development-course"},
+    {label:"AWS DevOps",path:"/awsdevopscourse"},
+    {label:"Artificial Intelligence",path:"/artificial-intelligence-course-training-institute-in-hyderabad"},
+    {label:"Generative AI",path:"/generative-ai-course-training-institute-hyderabad"},
+    {label:"Data Analytics",path:"/data-analytics-course-training-hyderabad"}
+ 
   ];
 
   const navigate = useNavigate();

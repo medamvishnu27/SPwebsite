@@ -18,21 +18,15 @@ const QuickHelpButton = () => {
 
     return (
         <>
-            <div className={`position-fixed ${styles.suggestionButton}`} style={{ top: '120px', left: '0px' }}>
-                <div>
-                    <p className={styles.quickHelpText}>Call me</p>
-                    <a
-                        href="tel:+918019479419"
-                        className={`btn shadow ${styles.roundButton} d-flex align-items-center justify-content-center`}
-                        style={{ width: "45px", height: "45px", borderRadius: "50%", }}
-                    >
-                        <FaPhone className="text-success" size={60} />
-                    </a>
-
-                </div>
-                {/* <button onClick={handleClose} className={`btn fw-bold ${styles.closeButton}`}>
-                    x
-                </button> */}
+            <div className={`position-fixed ${styles.suggestionButton}`} style={{ top: '30%', left: '0px', transform: 'translateY(-50%)' }}>
+                <a
+                    href="tel:+918019479419"
+                    className={`${styles.glassyButton} d-flex flex-column align-items-center justify-content-center`}
+                    style={{ cursor: 'pointer' }}
+                >
+                    <FaPhone className={`${styles.phoneIcon} text-success`} size={24} />
+                    <span className={styles.callMeText}>Call</span>
+                </a>
             </div>
         </>
     );
