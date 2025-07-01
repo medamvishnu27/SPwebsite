@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Camera, Calendar, Tag, Clock, CheckCircle, User, FileText, Upload, X, Save, Trash2, Edit, Search } from 'lucide-react';
 import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
+import 'quill/dist/quill.snow.css';
 import styles from './CourseBlogDashboard.module.css';
 import { addDoc, collection, getDocs, deleteDoc, doc, query, orderBy, updateDoc } from 'firebase/firestore';
 import { serverTimestamp } from 'firebase/firestore';
