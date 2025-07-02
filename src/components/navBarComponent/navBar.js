@@ -374,6 +374,16 @@ const NavBar = () => {
                     >
                       Students-Projects
                     </NavLink>
+                    <NavLink
+                      to="/career-roadmaps"
+                      className="dropdown-item"
+                      onClick={() => {
+                        closeDropdown("dropdown1");
+                        closeToggle();
+                      }}
+                    >
+                      Career RoadMap
+                    </NavLink>
                   </div>
                 </li>
 
