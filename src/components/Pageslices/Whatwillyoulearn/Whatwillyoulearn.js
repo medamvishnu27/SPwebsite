@@ -31,8 +31,8 @@ const Whatwillyoulearn = () => {
         return <div>Loading...</div>;
     }
 
-    return (
-        <div className={styles.totalPage}>
+return (
+        <div id="whatwillyoulearn" className={styles.totalPage}>
             <div className={styles.container}>
                 <div className={styles.header}>
                     <p className={styles.heading}>
@@ -89,7 +89,7 @@ const Whatwillyoulearn = () => {
                     ))}
                 </section>
 
-                <div className='pt-5'>
+                {/* <div className='pt-5'>
                     <h2>
                         Skill Up Now, Pay in Easy Installments! –
                         <span style={{ color: '#ff5003' }}>
@@ -100,7 +100,7 @@ const Whatwillyoulearn = () => {
                         </button>
                     </h2>
                     {isPopupVisible && <SignInForm onClose={togglePopup} actionType="Button:pricing Details" />}
-                </div>
+                </div> */}
             </div>
         </div>
     );

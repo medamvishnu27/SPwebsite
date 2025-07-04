@@ -14,6 +14,7 @@ import { faLightbulb } from '@fortawesome/free-regular-svg-icons';
 import Footer from './../../footer/footer';
 
 
+
 const AccordionItem = ({ title, content, isOpen, onClick }) => {
     const contentRef = useRef(null);
     const [maxHeight, setMaxHeight] = useState('0px');
@@ -212,14 +213,14 @@ const CourseAccordion = () => {
                         className={masterclassStyles.ClassImage}
                     />
                 </div>
-                <div className="d-flex justify-content-center">
+                {/* <div className="d-flex justify-content-center">
                     <button
                         className={`${masterclassStyles.shinebtn} btn`}
                         onClick={() => navigate('/career-counselling')}
                     >
                         Book Free Session
                     </button>
-                </div>
+                </div> */}
 
             </div>
 

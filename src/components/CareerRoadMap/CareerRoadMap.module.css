@@ -25,7 +25,7 @@
 .modalOverlay {
   position: fixed;
   inset: 0;
-  z-index: 50;
+  z-index: 50;  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +83,8 @@
   font-weight: bold;
   color: white;
   margin-bottom: 1.5rem;
-  line-height: 1.1;
+  line-height: 1.3;
+  
 }
 
 .heroTitleGradient {
@@ -92,6 +93,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  margin-bottom: 5PX;
 }
 
 .heroSubtitle {

@@ -683,8 +683,36 @@ const Headerpart = (courseID) => {
                 </div>
             </div>
 
+            {/* main  course card end  */}
+
             <div className={style.scrollSection}>
                 <p>Trusted by Learners Working At Top Companies</p>
+
+                <div className={style.scrollButtonsContainer}>
+                    <button
+                        className={style.scrollButton}
+                        onClick={() => {
+                            const element = document.getElementById('whatwillyoulearn');
+                            if (element) {
+                                element.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }}
+                    >
+                        What will you learn <i class="bi bi-arrow-down-circle-fill"></i>
+                    </button>
+                    <button
+                        className={style.scrollButton}
+                        onClick={() => {
+                            const element = document.getElementById('certificateSection');
+                            if (element) {
+                                element.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }}
+                    >
+                        See our course flow <i class="bi bi-arrow-down-circle-fill"></i>
+                    </button>
+                </div>
+
                 <div className={style.logoContainer}>
                     <div className={style.logoScroll1}>
                         {logos.slice(0, 10).map((logo, index) => (
@@ -703,7 +731,7 @@ const Headerpart = (courseID) => {
                 <div className={`d-flex m-4 ${isMobile ? 'flex-column text-center' : 'justify-content-center align-items-center gap-2'}`}>
                     <h4 className="fw-bold">Results That 
                         <span style={{ color: '#ff5003' }}> Speak Louder </span> Than  <span style={{ color: '#ff5003' }}>Words</span>     
-                    </h4>
+                    </h4>   
                 </div>
                 <div className="container">
                     <div className="row text-center mb-4">
@@ -748,7 +776,7 @@ const Headerpart = (courseID) => {
                     </div>
                 </div>
 
-                <Testmonials />
+                {/* <Testmonials /> */}
             </div>
         </div>
     );

@@ -8,6 +8,7 @@ import EnrollButton from '../Enrollbutton/Enrollbutton';
 import certificate from '../../../assets/AssetsOfDetailsPage/1-1.png';
 import { data } from '../../Cards/CardData';
 import { useParams } from "react-router-dom";
+const Masterclass = React.lazy(() => import('../Masterclass/Masterclass.js'));
 
 const TimelineComponent = () => {
     const [progressHeight, setProgressHeight] = useState(0);
@@ -48,11 +49,12 @@ const TimelineComponent = () => {
         };
     }, []);
 
-    return (
+return (
         <>
-            {/* Timeline Section */}
+            {/* Timeline Section  start*/}
             <div
                 className={styles.timelineContainer}
+                id="certificateSection"
                 ref={timelineRef}
                 style={{
                     backgroundImage: `url(${background})`,
@@ -96,10 +98,19 @@ const TimelineComponent = () => {
                         </div>
                     ))}
                 </div>
+                
             </div>
 
+             {/* Timeline Section  ends*/}
+
+             
+             <Masterclass/>
+             
+
+
+
             {/* Certificate Section */}
-            <div className={certificateStyling.content}>
+            <div  className={certificateStyling.content}>
                 <div className={certificateStyling.certificateContainer}>
                     <div className={certificateStyling.textContainer}>
                         <h3 className={certificateStyling.heading}>

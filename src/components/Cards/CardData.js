@@ -66,6 +66,13 @@ import student61 from '../../assets/AssetsOfDetailsPage/StudentsPlaced/sai react
 import student62 from '../../assets/AssetsOfDetailsPage/StudentsPlaced/Nandhini react js.jpg';
 import student63 from '../../assets/AssetsOfDetailsPage/StudentsPlaced/venkat sai react js.jpg';
 import student64 from '../../assets/AssetsOfDetailsPage/StudentsPlaced/Sowmya DM.jpg';
+import student65 from '../../assets/AssetsOfDetailsPage/StudentsPlaced/Ajay_kola_ML.png';
+import student66 from '../../assets/AssetsOfDetailsPage/StudentsPlaced/Bhargavi_Trinee_engineer.png';
+import student67 from '../../assets/AssetsOfDetailsPage/StudentsPlaced/Hemakumari_Trinee_engineer.png';
+import student68 from '../../assets/AssetsOfDetailsPage/StudentsPlaced/Mohit_kopuri_ML.png';
+import student69 from '../../assets/AssetsOfDetailsPage/StudentsPlaced/Nani_ML.png';
+import student70 from '../../assets/AssetsOfDetailsPage/StudentsPlaced/Sai_Chand _ML.png';
+
 
 // Impoerting DM Profiles
 import dmimg1 from '../../assets/digital_marketing_profiles/60.png'; 
@@ -96,7 +103,7 @@ import testmonialsCommentImageDM from '../../assets/AssetsOfDetailsPage/DM comme
 import defaultCertificate from '../../assets/AssetsOfDetailsPage/masterclass/defaultcertificate.png';
 import authorPhoto from '../../assets/authorphoto.jpg';
 import { faHandshake, faCalendarCheck, faChartBar, faThumbsUp, faEnvelope, faSnowflake, faEye, faImages } from "@fortawesome/free-regular-svg-icons";
-import { faArrowUp, faBinoculars, faBook, faBoxes, faBrain, faBriefcase, faBullhorn, faCertificate, faChartLine, faChartPie, faClipboardCheck, faClipboardList, faCloud, faCloudUploadAlt, faCode, faCodeBranch, faCogs, faDatabase, faDesktop, faGlobe, faLaptopCode, faLock, faMoneyBillWave, faMusic, faNetworkWired, faPalette, faPlug, faProjectDiagram, faRobot, faRocket, faSearch, faServer, faShareAlt, faShieldAlt, faSyncAlt, faTable, faTachometerAlt, faTasks, faTools, faUserGraduate, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUp, faBinoculars, faBook, faBoxes, faBrain, faBriefcase, faBullhorn, faCertificate, faChartLine, faChartPie, faClipboardCheck, faClipboardList, faCloud, faCloudUploadAlt, faCode,faTrophy, faCodeBranch, faCogs, faDatabase, faDesktop, faGlobe, faLaptopCode, faLock, faMoneyBillWave, faMusic, faNetworkWired, faPalette, faPlug, faProjectDiagram, faRobot, faRocket, faSearch, faServer, faShareAlt, faShieldAlt, faSyncAlt, faTable, faTachometerAlt, faTasks, faTools, faUserGraduate, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { faDocker, faNodeJs, faPiedPiper, faReact } from '@fortawesome/free-brands-svg-icons';
 
 import professional from '../../assets/AssetsOfDetailsPage/professional.svg';
@@ -328,26 +335,27 @@ export const data = [
         bannerStudentsEnrolled: '6k+ Students Enrolled',
         timeLineHeading: 'Data Scientist',
         levelcardIndex: [
+             {
+                icon: faChartBar,
+                title: "Master Data Analytics",
+                description: "Learn data analysis, statistics, and visualization using tools like Excel, SQL, and Power BI. Build a strong foundation for data-driven decision-making."
+            },
             {
                 icon: faChartBar,
                 title: "Master Data-Science",
                 description: "Python, OOPs, Machine Learning, Statistics and Probability, Data Mining, Data Warehousing, Programming"
             },
             {
-                icon: faChartBar,
-                title: "Master Data Analytics",
-                description: "Learn data analysis, statistics, and visualization using tools like Excel, SQL, and Power BI. Build a strong foundation for data-driven decision-making."
+                icon: faRobot,
+                title: "Explore AI Concepts",
+                description: "Learn AI techniques like deep learning and NLP. Use frameworks like TensorFlow to build intelligent solutions."
             },
             {
                 icon: faCloud,
                 title: "Learn Cloud Deployment",
                 description: "Deploy AI models on cloud platforms like AWS and Azure. Gain practical knowledge of scaling and automation."
             },
-            {
-                icon: faRobot,
-                title: "Explore AI Concepts",
-                description: "Learn AI techniques like deep learning and NLP. Use frameworks like TensorFlow to build intelligent solutions."
-            },
+            
             {
                 icon: faClipboardList,
                 title: "Weekly Assessments",
@@ -378,21 +386,13 @@ export const data = [
                 title: "Job Support",
                 description: "Receive unlimited interview opportunities until you secure a job. Achieve your career goals with our placement assistance."
             },
+            // CONGARATIONS FOR JOB
             {
-                icon: faSearch,
-                title: "Research Techniques",
-                description: "Learn research methodologies and techniques to solve problems effectively. Build skills in data sourcing and analysis."
-            },
-            {
-                icon: faBook,
-                title: "Interactive Tutorials",
-                description: "Access engaging tutorials that break down complex topics into simple concepts. Learn at your own pace with comprehensive resources."
-            },
-            {
-                icon: faCogs,
-                title: "Technical Skills Training",
-                description: "Master essential technical skills required in the industry, including tools, frameworks, and best practices."
-            }
+                icon: faTrophy,
+                title: "Congratulations for the job ",
+                description: "Congratulations on getting the job, you have done a great job, you are the best"
+                },
+           
         ],
         popUpDropDownCourses: [
             { dropDownid: 0, courseName: 'Data Science' },
@@ -426,6 +426,12 @@ export const data = [
             { id: 25, image: student41 },
             { id: 26, image: student42 },
             { id: 27, image: student44 },
+             {id:28, image:student65},
+            {id:29, image:student68},
+            {id:30, image:student69},
+            {id:31, image:student70},
+            {id:32, image:student66},
+            {id:33, image:student67},
         ],
     },
 
@@ -676,6 +682,11 @@ export const data = [
                 title: "Placement Preparation",
                 description: "Prepare for the job market with resume building, interview preparation, and understanding the roles and responsibilities of a MERN Stack Developer."
             },
+              {
+                icon: faTrophy,
+                title: "Congratulations for the job ",
+                description: "Congratulations on getting the job, you have done a great job, you are the best"
+                },
         ]
         ,
         accordionContent: [
@@ -741,6 +752,8 @@ export const data = [
             { id: 18, image: student61 },
             { id: 19, image: student62 },
             { id: 20, image: student63 },
+            {id:21, image:student66},
+            {id:22, image:student67},
         ],
         bannerHeader: 'Learn Mern Stack Today',
         bannerStudentsEnrolled: '2.8k+ Students Enrolled',
@@ -1012,7 +1025,11 @@ export const data = [
                 icon: faHandshake,
                 title: "Comprehensive Job Support",
                 description: "Benefit from career counseling, mock interviews, and networking opportunities to land your dream job."
-            }
+            } , {
+                icon: faTrophy,
+                title: "Congratulations for the job ",
+                description: "Congratulations on getting the job, you have done a great job, you are the best"
+                },
         ],
         popUpDropDownCourses: [
             { dropDownid: 0, courseName: 'Python Full stack Development' },
@@ -1039,6 +1056,8 @@ export const data = [
             { id: 17, image: student10 },
             { id: 18, image: student35 },
             { id: 19, image: student36 },
+            {id:20, image:student66},
+            {id:21, image:student67},
         ],
         accordionContent: [
             {
@@ -1188,6 +1207,8 @@ export const data = [
             { id: 18, image: student57 },
             { id: 19, image: student58 },
             { id: 20, image: student59 },
+            {id:21, image:student66},
+            {id:22, image:student67},
         ],
         moduleContent: [
             {
@@ -1444,7 +1465,11 @@ export const data = [
                 icon: faCertificate,
                 title: "Certification of Completion",
                 description: "Earn an industry-recognized certificate upon completing the course to showcase your expertise in full-stack Java development."
-            }
+            } , {
+                icon: faTrophy,
+                title: "Congratulations for the job ",
+                description: "Congratulations on getting the job, you have done a great job, you are the best"
+                },
         ],
         accordionContent: [
             {
@@ -1750,7 +1775,11 @@ export const data = [
                 icon: faBriefcase,
                 title: "Placement Preparation",
                 description: "Get ready for the job market with resume building, interview preparation, and understanding DevOps roles and responsibilities in the AWS ecosystem."
-            }
+            },  {
+                icon: faTrophy,
+                title: "Congratulations for the job ",
+                description: "Congratulations on getting the job, you have done a great job, you are the best"
+                },
         ],
         accordionContent: [
             {
@@ -1822,6 +1851,12 @@ export const data = [
             { id: 27, image: student44 },
             { id: 28, image: student56 },
             { id: 29, image: student60 },
+            {id:30, image:student65},
+            {id:31, image:student68},
+            {id:32, image:student69},
+            {id:33, image:student70},
+            {id:34, image:student66},
+            {id:35, image:student67},
             
         ],
         bannerHeader: 'Learn AWS DevOps Today',
@@ -2095,7 +2130,11 @@ export const data = [
                 icon: faBriefcase,
                 title: "Career in AI",
                 description: "Prepare for careers in AI with guidance on resume building, interview preparation, and leveraging LinkedIn effectively."
-            }
+            },  {
+                icon: faTrophy,
+                title: "Congratulations for the job ",
+                description: "Congratulations on getting the job, you have done a great job, you are the best"
+                },
         ],
         accordionContent: [
             {
@@ -2167,6 +2206,12 @@ export const data = [
             { id: 26, image: student42 },
             { id: 27, image: student44 },
             { id: 28, image: student52 },
+             {id:29, image:student65},
+            {id:30, image:student68},
+            {id:31, image:student69},
+            {id:32, image:student70},
+            {id:33, image:student66},
+            {id:34, image:student67},
         ],
         bannerHeader: 'Learn Artificial Intelligence Today',
         bannerStudentsEnrolled: '6k+ Students Enrolled',
@@ -2398,7 +2443,11 @@ export const data = [
                 icon: faBriefcase,
                 title: "Placement Preparation",
                 description: "Enhance your resume, optimize LinkedIn profiles, and prepare for job interviews with comprehensive support."
-            }
+            },{
+                icon: faTrophy,
+                title: "Congratulations for the job ",
+                description: "Congratulations on getting the job, you have done a great job, you are the best"
+                },
         ],
         accordionContent: [
             {
@@ -2457,7 +2506,9 @@ export const data = [
             { id: 13, image: dmimg12},
             { id: 14, image: dmimg13},
             { id: 15, image: dmimg14},
-            {id:16,image:student64}
+            {id:16,image:student64},
+            {id:17, image:student66},
+            {id:18, image:student67},
         ],
         bannerHeader: 'Learn Digital Marketing Today',
         bannerStudentsEnrolled: '6k+ Students Enrolled',
@@ -2772,6 +2823,12 @@ export const data = [
             { id: 25, image: student41 },
             { id: 26, image: student42 },
             { id: 27, image: student44 },
+             {id:28, image:student65},
+            {id:29, image:student68},
+            {id:30, image:student69},
+            {id:31, image:student70},
+            {id:32, image:student66},
+            {id:33, image:student67},
         ],
         bannerHeader: 'Learn Generative AI Today',
         bannerStudentsEnrolled: '6k+ Students Enrolled',
@@ -3058,6 +3115,8 @@ export const data = [
             { id: 17, image: student31 },
             { id: 18, image: student32 },
             { id: 19, image: student33 },
+            {id:20, image:student66},
+            {id:21, image:student67},
         ],
         bannerHeader: 'Learn Data Analytics Today',
         bannerStudentsEnrolled: '2.7k+ Students Enrolled',
@@ -3314,7 +3373,11 @@ export const data = [
                 icon: faCertificate,
                 title: "Certification Preparation",
                 description: "Prepare for Snowflake certifications like Data Engineer and Architect, with exam preparation and sample questions."
-            }
+            },{
+                icon: faTrophy,
+                title: "Congratulations for the job ",
+                description: "Congratulations on getting the job, you have done a great job, you are the best"
+                },
         ],
         accordionContent: [
             {
@@ -3393,6 +3456,8 @@ export const data = [
             { id: 17, image: student31 },
             { id: 18, image: student32 },
             { id: 19, image: student33 },
+            {id:20, image:student66},
+            {id:21, image:student67},
         ],
         bannerHeader: 'Learn Snow Flake Today',
         bannerStudentsEnrolled: '2.7k+ Students Enrolled',
@@ -3649,7 +3714,11 @@ export const data = [
                 icon: faCertificate,
                 title: "Salesforce Certification Preparation",
                 description: "Prepare for Salesforce certifications like Platform Developer I & II and Administrator, with exam preparation and sample questions."
-            }
+            },{
+                icon: faTrophy,
+                title: "Congratulations for the job ",
+                description: "Congratulations on getting the job, you have done a great job, you are the best"
+                },
         ],
         accordionContent: [
             {
@@ -3728,6 +3797,8 @@ export const data = [
             { id: 17, image: student31 },
             { id: 18, image: student32 },
             { id: 19, image: student33 },
+            {id:21, image:student66},
+            {id:22, image:student67},
         ],
         bannerHeader: 'Learn Sales Force Today',
         bannerStudentsEnrolled: '2.7k+ Students Enrolled',

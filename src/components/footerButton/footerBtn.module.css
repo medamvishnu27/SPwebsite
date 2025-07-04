@@ -4,8 +4,8 @@
 } */
 .scrollButton {
   position: fixed;
-  right: 20px;
-  bottom: 40px;
+  right: 30px;
+  bottom: 150px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -17,11 +17,11 @@
 }
 
 .scrollButton:hover {
-  background-color: #543cdfa7;
+  background-color: #2c08fafa;
 }
 
 .scrollButton span {
   display: inline-block;
-  font-size: 20px;
+  font-size: 23px;
   transform: rotate(-90deg);
 }

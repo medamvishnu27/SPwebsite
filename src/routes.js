@@ -42,7 +42,6 @@ const routes = [
     <Route path='/OurAchievementsDashboard' element={<OurAchievementsDashboard />} />,
     <Route path='/courseBlogDashboard' element={<CourseBlogDashBoard />} />,
     <Route path='/courseBlog' element={<CourseBlog />} />,
-    <Route path='/events/:id' element={<EventOpenPage />} />,
     <Route path='events' element={<EventsPage />} />,
     <Route path="/subscription/:userType" element={<Subscription />} />,
     <Route path="/subscription" element={<Subscription />} />,

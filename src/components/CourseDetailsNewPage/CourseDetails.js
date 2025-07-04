@@ -2,16 +2,17 @@
   import Loading from '../../components/extraComponents/loading';
   import { useParams } from 'react-router-dom';
   import PageNotFound from '../pageNotFound/PageNotFound';
-  import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
+import FooterBtn from '../footerButton/footerBtn';
 
-  const Headerpart = React.lazy(() => import('../Pageslices/Header/Headerpart'));
-  const Masterclass = React.lazy(() => import('../Pageslices/Masterclass/Masterclass'));
-  const Testmonials = React.lazy(() => import('../Pageslices/Testmonials/Testmonials'));
-  const Whatwillyoulearn = React.lazy(() => import('../Pageslices/Whatwillyoulearn/Whatwillyoulearn'));
-  const Mentorpage = React.lazy(() => import('../Pageslices/Mentorpage/Mentorpage'));
-  const Certificate = React.lazy(() => import('../Pageslices/Certificatepart/Certificate'));
-  const Banner = React.lazy(() => import('../Pageslices/Banner/Banner'));
-  const CourseAccordion = React.lazy(() => import('../Pageslices/AccordianQuestions/Accordian'));
+const Headerpart = React.lazy(() => import('../Pageslices/Header/Headerpart'));
+  
+const Testmonials = React.lazy(() => import('../Pageslices/Testmonials/Testmonials'));
+const Whatwillyoulearn = React.lazy(() => import('../Pageslices/Whatwillyoulearn/Whatwillyoulearn'));
+const Mentorpage = React.lazy(() => import('../Pageslices/Mentorpage/Mentorpage'));
+const Certificate = React.lazy(() => import('../Pageslices/Certificatepart/Certificate'));
+const Banner = React.lazy(() => import('../Pageslices/Banner/Banner'));
+const CourseAccordion = React.lazy(() => import('../Pageslices/AccordianQuestions/Accordian'));
 
   const validSlugs = ['data-science', 
       'python-full-stack-development-course',
@@ -202,12 +203,14 @@
             </Helmet>
             <Suspense fallback={<Loading />}>
                 <Headerpart />
-                <Masterclass />
+                <Testmonials/>
+                
                 <Whatwillyoulearn />
                 <Mentorpage />
                 <Certificate />
                 <CourseAccordion /> 
                 <Banner />
+                <FooterBtn />
             </Suspense>
           </>
       );
